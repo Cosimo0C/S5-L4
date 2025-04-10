@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: rgb(106, 104, 103);
+}
+main {
+  margin-block: 30px;
+  margin-inline: 40px;
+  width: 100%;
+}
+article {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.post-it1,
+.post-it2,
+.post-it3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 200px;
+  background: rgb(255, 254, 227);
+  background: linear-gradient(180deg, rgba(255, 254, 227, 1) 11%, rgba(221, 215, 162, 1) 66%, rgb(137, 137, 124) 100%);
+  transform: rotate3d(0, 0, 2, 354deg);
+  box-shadow: 15px 4px 8px rgba(3, 3, 3, 0.326);
+}
+.post-it1:hover,
+.post-it2:hover,
+.post-it3:hover {
+  transform: scale(1.2);
+  transition: 100ms;
+}
+.post-it2 {
+  background: rgb(245, 255, 227);
+  background: linear-gradient(180deg, rgba(245, 255, 227, 1) 11%, rgba(204, 221, 162, 1) 66%, rgb(134, 140, 127) 100%);
+  transform: rotate3d(0, 0, 2, 6deg);
+}
+.post-it3 {
+  background: rgb(227, 233, 255);
+  background: linear-gradient(180deg, rgb(212, 217, 235) 11%, rgba(162, 181, 221, 1) 66%, rgb(109, 117, 126) 100%);
+  transform: rotate3d(0, 0, 2, 343deg);
+}
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-size: 45px;
+}
+p {
+  display: block;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+}
